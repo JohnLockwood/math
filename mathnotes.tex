@@ -1,6 +1,8 @@
 \documentclass[12pt, letterpaper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage{hyperref}
+
 \graphicspath{ {./images/} }
 
 \title{My Math Notes}
@@ -16,15 +18,69 @@
 \section{Introduction}
 
 What I want to be able to do is to keep important math notes handy.
+The goal of all this is to take the \href{https://clep.collegeboard.org/clep-exams/calculus}{Calculus CLEP Exam}.  
+One approach to this is the \href{https://courses.modernstates.org/courses/course-v1:ModernStatesX+Calculus+2017/course/}{Modern States Course}
+\section{Modern States Notes}
+\subsection{Module 1, Limits}
 
-\section{Unit Circle}
+Continuity is essential to calculus
+
+Epsilon/delta formal def of Limits
+
+Limits are central to def of both derivative and integrals.
+
+Limits happen at a certain point, not for whole function.
+
+Technical (epsilon/delta) definition of limits given \href{https://courses.modernstates.org/courses/course-v1:ModernStatesX+Calculus+2017/courseware/8f598eefb77a4cceb9d65d6ae993c417/4c2b909e818e421ba4a9e7aa31aba97f/?child=first}{here}
+
+Limits might not exist
+
+Function is continuous if f(x) exists \(\lim_{y \to x} f(x)\)  = f(x)
+
+He's not going to do left and right limits.
+
+To get limit, evaluating function only works for continuous functions.
+
+Polynomials are continuous, rational functions are more tricky.  For example:
+
+\[
+    \lim_{x \to -1}\frac{x^2 + 2x + 1}{x + 1}
+\]
+
+limit by subst. is 0/0, which could be zero, one, infinity.  Indeterminate form.
+
+Can do it by factoring out x+1, and cancel one out.
+
+If get zero over zero, need to factor.
+
+\vspace{5mm}
+
+Another example: \(
+    \lim_{x \to 0}\frac{1}{x}
+\)
+
+\vspace{5mm}
+Limit does not exist!  DNE.
+
+Watch out too for absolute value of x over x -- no limit, because diff for pos and neg values.
+
+Note not all piecewise functions are discontinuous.
+
+General rules for continuous functions:
+
+Polynomials, exponential functions, and sin and cos are continuous.
+Rational functions are continuous except at points where denominator is zero.
+Logarithm is continuous, because domain is only (0,infinity)
+Tangent function is discontinuous
+
+\vspace{1cm}
+Classic function that uses the squeeze theorem (memorize):
+\(\lim{x \to 0}\frac{sin(x)}{x}\)
+Answer ends up being one c.f. (Here's a \href{http://ime.math.arizona.edu/g-teams/Profiles/JS/Calc/SqueezeTheorem.pdf}{proof}.)
+\section{Preliminaries and Things To Memorize}
+\subsection{Unit Circle}
 \includegraphics[width=6cm, height=6cm]{unit-circle.png}
-
-\subsection{Some Baloney}
-
-Some of the \textbf{best ideas} should show up in \underline{\textit{this document}}! 
-
-\section{Trigonometric Identities}
+\subsection{Trigonometric Identities}
 
 \begin{center}
     \begin{tabular}{  p{5cm}  p{5cm} }
@@ -39,7 +95,7 @@ Some of the \textbf{best ideas} should show up in \underline{\textit{this docume
 \end{tabular}
 \end{center}
 \vspace{1cm}
-
-\section{Parens}
+\section{Misc}
+\subsection{LaTeX examples}
 $(\frac{f(x)}{g(x)})$
 \end{document}
