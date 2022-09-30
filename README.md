@@ -6,4 +6,4 @@ These notes are me working toward the equivalent of a B.S. in Math (more or less
 
 > _"I totally made that shit up."_  (John Lockwood, aka Johnsin, founder.)
 
-We'll push some usage instructions for the project soon.  Thanks for your interest.
+I'll push some usage instructions for the project soon.  Thanks for your interest.
