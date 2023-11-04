@@ -1,0 +1,1 @@
+To build math notes, uses ```pdflatex mathnotes.tex```
